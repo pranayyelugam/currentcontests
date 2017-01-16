@@ -1,3 +1,66 @@
-<h1>
-  {{title}}
-</h1>
+<div class="jumbotron">
+  <h1 align="center">
+    Contest Tracker
+  </h1>
+</div>
+<div class="container">
+
+
+<div class="col-md-5">
+  <h2 align ="center">Ongoing Contests</h2>
+  <br><br>
+<div *ngIf="ongoingres">
+    <div *ngFor="let res of ongoingres">
+        <div class="row">
+                <div class="search-res well">
+                    <h4>{{res.Name}}</h4>
+                    <div>
+                      <strong>Platform:</strong><span>{{res.Platform}}</span>
+                    </div>
+                     <div>
+                      <strong>EndTime : </strong><span>{{res.EndTime}}</span>
+                    </div>
+                    <div>
+                      <strong>Contest Url : </strong><span><a href = "{{res.url}}">{{res.url}}</a></span>
+                    </div> 
+                </div>    
+          </div>
+    </div>
+</div>
+</div>
+<div class="col-md-2">
+</div>
+
+<div class="col-md-5">
+  <h2 align ="center">Upcoming Contests</h2>
+  <br><br>
+<div *ngIf="upcomingres">
+    <div *ngFor="let res of upcomingres">
+        <div class="row">
+                <div class="search-res well">
+                    <h4>{{res.Name}}</h4>
+                    <div>
+                      <strong>Platform : </strong><span>{{res.Platform}}</span>
+                    </div>
+                    <div>
+                      <strong>Duration : </strong><span>{{res.Duration}}</span>
+                    </div>
+                    <div>
+                      <strong>StartTime : </strong><span>{{res.StartTime}}</span>
+                    </div>
+                    <div>
+                      <strong>EndTime : </strong><span>{{res.EndTime}}</span>
+                    </div>
+                    <div>
+                      <strong>Contest Url : </strong><span><a href = "{{res.url}}">{{res.url}}</a></span>
+                    </div>
+
+                </div>    
+          </div>
+    </div>
+</div>
+</div>
+
+
+
+</div>

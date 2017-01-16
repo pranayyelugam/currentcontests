@@ -1,7 +1,5 @@
-export class upcoming {
-    duration: string;
+export class ongoing1 {
     endtime: string;
-    starttime: string;
     name: string;
     platform: string;
     url: string;

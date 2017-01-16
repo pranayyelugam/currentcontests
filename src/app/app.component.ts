@@ -1,8 +1,8 @@
 import { Component , OnInit } from '@angular/core';
 import { Http,Headers } from '@angular/http';
 import { CurrentserviceService } from './Currentservice.service';
-import { ongoing } from './ongoing';
-import { upcoming } from './upcoming';
+import { ongoing1 } from './ongoing1';
+import { upcoming1 } from './upcoming1';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,8 +11,8 @@ import { upcoming } from './upcoming';
 })
 export class AppComponent {
   title = 'app works!';
-  ongoingres: ongoing[];
-  upcomingres: upcoming[];
+  ongoingres: ongoing1[];
+  upcomingres: upcoming1[];
 
   constructor(private currentservice: CurrentserviceService){
 
